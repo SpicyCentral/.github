@@ -1,0 +1,45 @@
+---
+name: Documentation Improvement
+description: Suggest improvements to our documentation
+title: "[DOCS] "
+labels:
+  - documentation
+  - needs triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a documentation improvement! Please fill out the following information to help us understand your suggestion.
+  - type: textarea
+    id: documentation-location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation that needs improvement? Provide links or describe the section.
+    validations:
+      required: true
+  - type: textarea
+    id: current-problem
+    attributes:
+      label: Current Problem
+      description: What's wrong with the current documentation? Is it unclear, incomplete, outdated, or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested Improvement
+      description: How can we improve the documentation? Please be as specific as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the documentation issue here.
+  - type: checkboxes
+    id: willing-to-help
+    attributes:
+      label: Are you willing to help?
+      description: Would you be willing to submit a PR to help with this documentation improvement?
+      options:
+        - label: Yes, I'm willing to submit a PR.
